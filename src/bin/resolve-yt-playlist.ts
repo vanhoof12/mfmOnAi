@@ -35,7 +35,7 @@ async function main() {
   var folderPath = 'out'
 
   if (!fs1.existsSync(folderPath)) {
-    fs.mkdirSync(folderPath, { recursive: true })
+    fs1.mkdirSync(folderPath, { recursive: true })
   }
 
   await fs.writeFile(
