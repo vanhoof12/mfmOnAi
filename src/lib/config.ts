@@ -7,7 +7,7 @@ export const isSafari =
 export const title = 'MFM On AI'
 export const description =
   'Search across the My First Million Podcast using an advanced semantic search index powered by OpenAI.'
-export const domain = 'all-in-on-ai.vercel.app'
+export const domain = 'mfm-on-ai.vercel.app'
 
 export const author = 'Casey'
 export const twitter = 'casey_xyz'
