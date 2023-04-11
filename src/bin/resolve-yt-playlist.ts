@@ -1,5 +1,6 @@
 import * as fs from 'node:fs/promises'
 
+import * as fs1 from 'fs'
 import { google } from 'googleapis'
 
 import * as types from '@/server/types'
@@ -29,6 +30,12 @@ async function main() {
   const playlistDetailsWithTranscripts: types.PlaylistDetailsWithTranscripts = {
     ...playlistDetails,
     transcripts: transcriptsMap
+  }
+
+  var folderPath = 'out'
+
+  if (!fs1.existsSync(folderPath)) {
+    fs.mkdirSync(folderPath, { recursive: true })
   }
 
   await fs.writeFile(

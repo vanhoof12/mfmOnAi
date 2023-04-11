@@ -4,20 +4,18 @@ export const isServer = typeof window === 'undefined'
 export const isSafari =
   !isServer && /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
 
-export const title = 'All-In On AI'
+export const title = 'MFM On AI'
 export const description =
-  'Search across the All-In Podcast using an advanced semantic search index powered by OpenAI.'
+  'Search across the My First Million Podcast using an advanced semantic search index powered by OpenAI.'
 export const domain = 'all-in-on-ai.vercel.app'
 
-export const author = 'Travis Fischer'
-export const twitter = 'transitive_bs'
+export const author = 'Casey'
+export const twitter = 'casey_xyz'
 export const twitterUrl = `https://twitter.com/${twitter}`
-export const githubRepoUrl =
-  'https://github.com/transitive-bullshit/yt-semantic-search'
-export const githubSponsorsUrl =
-  'https://github.com/sponsors/transitive-bullshit'
+export const githubRepoUrl = 'https://github.com/'
+export const githubSponsorsUrl = 'https://github.com/sponsors/'
 export const copyright = `Copyright 2022 ${author}`
-export const madeWithLove = 'Made with ❤️ in Brooklyn, NY'
+export const madeWithLove = 'Made with ❤️ in MI'
 
 export const port = process.env.PORT || '3000'
 export const prodUrl = `https://${domain}`

@@ -60,52 +60,52 @@ export const EmptyQuery: React.FC = () => {
 
   return (
     <div className={styles.emptyResults}>
-      <p>Search any topic the besties have covered on the pod.</p>
+      <p>Search any topic the Sam and Shaan have covered on the pod.</p>
 
       <p>
         Examples:{' '}
         <Link
           className='link'
-          href='/?query=sweater+karen'
+          href='/?query=business+ideas'
           onClick={(e) => {
             e.preventDefault()
-            fakeNavigation('sweater karen')
+            fakeNavigation('business ideas')
           }}
         >
-          sweater karen
+          business ideas
         </Link>
         ,&nbsp;
         <Link
           className='link'
-          href='/?query=great+poker+story'
+          href='/?query=crypto+crash'
           onClick={(e) => {
             e.preventDefault()
-            fakeNavigation('great poker story')
+            fakeNavigation('crypto crash')
           }}
         >
-          great poker story
+          crypto crash
         </Link>
         ,&nbsp;
         <Link
           className='link'
-          href='/?query=crypto'
+          href='/?query=airbnb'
           onClick={(e) => {
             e.preventDefault()
-            fakeNavigation('crypto')
+            fakeNavigation('airbnb')
           }}
         >
-          crypto
+          airbnb
         </Link>
         ,&nbsp;
         <Link
           className='link'
-          href='/?query=science+corner'
+          href='/?query=billy+of+the+week'
           onClick={(e) => {
             e.preventDefault()
-            fakeNavigation('science corner')
+            fakeNavigation('billy of the week')
           }}
         >
-          science corner
+          billy of the week
         </Link>
       </p>
 
@@ -113,7 +113,7 @@ export const EmptyQuery: React.FC = () => {
         <Image
           className={styles.socialImage}
           src={socialImage.src}
-          alt='Search the All-In Podcast using AI-powered semantic search.'
+          alt='Search the MFM Podcast using AI-powered semantic search.'
           width={socialImage.width}
           height={socialImage.height}
           placeholder='blur'
